@@ -14,7 +14,7 @@ This repository is a fork of the open source [SonarQube Plugin for Objective-C](
 
 A SonarQube 5.0 dashboard of the iOS open source project [GreatReader](https://github.com/semweb/GreatReader):
 <p align="center">
-  <img src="sample/screen%20shot%20SonarQube%20dashboard.png" alt="Example iOS SonarQube dashboard" width="100%"/>
+  <img src="sample/screenshot1.png" alt="Example iOS SonarQube dashboard" width="100%"/>
 </p>
 
 ### Features
