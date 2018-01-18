@@ -8,10 +8,12 @@ if [ "$?" != 0 ]; then
 	exit $?
 fi
 
+SONARQUBE_HOME=/usr/local/Cellar/sonarqube/6.7.1/libexec
+
 # Deploy new verion of plugin in Sonar dir
 rm -rf $SONARQUBE_HOME/extensions/plugins/*sonar-objective-c-*
 cp sonar-objective-c-plugin/target/*.jar $SONARQUBE_HOME/extensions/plugins
-rm $SONARQUBE_HOME/extensions/plugins/*sources.jar
+rm -rf $SONARQUBE_HOME/extensions/plugins/*sources.jar
 
 # Stop/start Sonar
 unset GEM_PATH GEM_HOME
